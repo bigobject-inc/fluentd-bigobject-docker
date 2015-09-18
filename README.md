@@ -7,13 +7,13 @@ This image contains Fluentd and the output plugin (out_bigobject.rb) for sending
 To build the image
 
 ```apache
-docker build -t fluentdbo .
+docker build -t macrodatalab/fluentd-bigobject .
 ```
 
 ## How to use 
 
 ```apache
-docker run -t -d --name my_fluentdbo -v /path/to/dir:/fluentd/input fluentdbo
+docker run -t -d --name my_fluentdbo -v /path/to/dir:/fluentd/input macrodatalab/fluentd-bigobject 
 ```
 
 /fluentd/input is where the file to be monitored is located. 
@@ -21,7 +21,7 @@ docker run -t -d --name my_fluentdbo -v /path/to/dir:/fluentd/input fluentdbo
 Default configuration in docker is “fluent.conf” located in /fluentd/etc. To use your own fluentd configuration file, execute “docker run” with “-v /path/to/dir:/fluentd/etc” and “-e FLUENTD_CONF=yours.conf”.  Eg. 
 
 ```apache
-docker run -t -d --name my_fluentdbo -v /path/to/dir:/fluentd/input -v /path/to/dir:/fluentd/etc -e FLUENTD_CONF=yours.conf fluentdbo
+docker run -t -d --name my_fluentdbo -v /path/to/dir:/fluentd/input -v /path/to/dir:/fluentd/etc -e FLUENTD_CONF=yours.conf macrodatalab/fluentd-bigobject 
 ```
 
 
