@@ -8,9 +8,8 @@ ENV PATH /home/ubuntu/ruby/bin:$PATH
 RUN mkdir -p /fluentd/input
 COPY input/* /fluentd/input/
 
-#RUN gem install fluent-plugin-secure-forward
-RUN gem install rest-client
-RUN gem install json
+RUN gem install fluent-plugin-bigobject --no-document
+RUN gem install rest-client --no-document 
+RUN gem install json --no-document
 
-EXPOSE 24284
 CMD fluentd -c /fluentd/etc/$FLUENTD_CONF -p /fluentd/plugins $FLUENTD_OPT
