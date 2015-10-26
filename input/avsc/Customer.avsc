@@ -1,0 +1,11 @@
+{"type" : "record",
+ "name" : "Customer",
+ "fields" : [{"name": "id", "type": "string"},
+             {"name": "name", "type":"string"},
+             {"name": "language", "type":"string"},
+             {"name": "state", "type":"string"},
+             {"name": "company", "type":"string"},
+             {"name": "gender", "type":"string"},
+             {"name": "age", "type":"int"}
+            ]
+}

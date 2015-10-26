@@ -11,5 +11,7 @@ COPY input/* /fluentd/input/
 RUN gem install fluent-plugin-bigobject --no-document
 RUN gem install rest-client --no-document 
 RUN gem install json --no-document
+RUN gem install avro --no-document
+RUN gem install fluent-plugin-avro --no-document
 
 CMD fluentd -c /fluentd/etc/$FLUENTD_CONF -p /fluentd/plugins $FLUENTD_OPT
