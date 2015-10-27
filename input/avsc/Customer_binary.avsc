@@ -1,5 +1,5 @@
 {"type" : "record",
- "name" : "Customer",
+ "name" : "Customer_binary",
  "fields" : [{"name": "id", "type": "string"},
              {"name": "name", "type":"string"},
              {"name": "language", "type":"string"},
