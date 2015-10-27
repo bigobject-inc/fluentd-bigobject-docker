@@ -6,7 +6,7 @@ WORKDIR /home/ubuntu
 ENV PATH /home/ubuntu/ruby/bin:$PATH
 
 RUN mkdir -p /fluentd/input
-COPY input/* /fluentd/input/
+COPY input /fluentd/input
 
 RUN gem install fluent-plugin-bigobject --no-document
 RUN gem install rest-client --no-document 
