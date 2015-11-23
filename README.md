@@ -1,6 +1,6 @@
 # fluentd-bigobject-docker
 
-This image contains Fluentd and the output plugin (out_bigobject.rb) for sending data to BigObject. It provides an example where the user wish to monitor a file, and insert data into BigObject when new rows are added. 
+This image contains Fluentd and the output plugins (out_bigobject.rb, out_bigobject_avro.rb) for sending data to BigObject. It provides an example where the user wish to monitor a file, and insert data into BigObject when new rows are added. 
 
 ## How to build 
 
