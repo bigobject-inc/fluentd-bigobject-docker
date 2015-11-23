@@ -9,6 +9,7 @@ RUN mkdir -p /fluentd/input
 COPY input /fluentd/input
 
 RUN gem install fluent-plugin-bigobject --no-document
+RUN gem install fluent-plugin-bigobject_avro --no-document
 RUN gem install rest-client --no-document 
 RUN gem install json --no-document
 RUN gem install avro --no-document
